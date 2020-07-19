@@ -1,0 +1,178 @@
+/* Add or modify CSS for your web app */
+
+* {
+  box-sizing: border-box; /* use traditional box model sizing */
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+ 
+}
+
+.row{
+  text-align: center;
+}
+
+/* #notification  */
+#notification {
+  display: none; /* hide until needed */
+  position: fixed; /* fix to viewport */
+  top: 0; /* place at top of viewport */
+  left: 50%;
+  transform: translate(-50%, 10px);
+  max-width: 300px;
+  width: calc(100vw - 20px);
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #fbfbfb;
+  border-radius: 10px;
+  border: 1px solid #bbbbbb;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+/* close button for notification */
+.closebtn {
+  margin: -15px -15px 10px 10px;
+  padding: 10px;
+  color: #888888;
+  font-weight: bold;
+  float: right;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* hover effect for close button */
+.closebtn:hover {
+  color: #000000;
+}
+
+/* .screen class applies to all screens */
+.screen {
+  max-width: 100vw; /* mimic largest phone width */
+  width: 100vw; /* width of viewport */
+  height: 100vh; /* height of viewport minus height of #navigation menu */
+  margin: 0 auto;
+  /*padding: 20px 10px;*/
+  overflow: auto;
+  border: 1px solid #888888;
+  text-align: center;
+  /* can add other CSS for all screens, such as background-color, etc. */
+
+}
+
+.camera--view{
+  height: calc(100vh - 50px); 
+  background-color: rgb(211, 211, 211);
+
+}
+
+.camera--taken{
+  height: calc(100vh - 50px); 
+  background-color: rgb(211, 211, 211);
+}
+
+.camera--edit{
+  height: calc(100vh - 120px); 
+  background-color: rgb(211, 211, 211);
+  position: absolute;
+  z-index: 0;
+}
+
+.camera--screen{
+  position: absolute;
+  z-index: 1;
+}
+
+.images{
+  position: relative;
+  z-index: 3;
+}
+
+.nav--1{
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: gainsboro;
+}
+
+.container-fluid.stickers{
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  /*overflow: auto;
+  white-space: nowrap;*/
+
+}
+
+/* show #screen1 when app first starts */
+#screen1 {
+	display: block;
+}
+
+/* hide other screens when app first starts */
+#screen2, #screen3, #screen4 {
+	display: none;
+}
+
+
+/* Horizontal scroll bar with stickers 
+
+.container.testimonial-group{
+  height: 80vh;
+}
+
+
+
+.row.text-center{
+  height: 80vh;
+  vertical-align: bottom;
+}
+*/
+
+
+.text--input{
+  display: none;
+}
+
+.form-control{
+  width: 100vw;
+}
+
+/* can add custom CSS for each specific screen */
+#screen1 {
+
+}
+
+#screen2 {
+
+}
+
+#screen3 {
+
+}
+
+#screen4 {
+
+}
+
+
+#drag-3 {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url("1.svg");
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  background-position: center; /* Center the image */
+background-repeat: no-repeat; /* Do not repeat the image */
+background-size: cover; /* Resize the background image to cover the entire container*/
+}
